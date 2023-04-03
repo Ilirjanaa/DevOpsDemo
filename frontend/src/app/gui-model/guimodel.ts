@@ -135,7 +135,16 @@ export class GuiModel {
                             "form": {
                                 "form": "ToDoForm"
                             }
-                        }
+                        },
+                        {
+                            "type": "button",
+                            "name": { default: "TEST" },
+                            "icon": "fa-file-alt",
+                            "color": "red",
+                            "page": "modulePage",
+                            "width": 2,
+                            },
+                            
                     ]
                 },
             ]
