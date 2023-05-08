@@ -17,7 +17,7 @@ public class FizzBuzzConverterTest {
     public void fizzBuzzConvertor2() {
 
         FizzBuzzConverter fizzBuzz = new FizzBuzzConverter();
-        Assertions.assertEquals("5000", fizzBuzz.convert(2));
+        Assertions.assertEquals("2", fizzBuzz.convert(2));
 
     }
 
