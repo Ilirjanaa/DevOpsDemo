@@ -32,4 +32,17 @@ public class TicTacToeTest {
         Assertions.assertEquals('X', game.getFieldValue(1, 1));
     }
     
+    @Test
+    public void Test4() {
+        game.play(0, 0); // X
+        game.play(0, 1); // O
+        game.play(0, 2); // X
+        game.play(1, 0); // O
+        game.play(1, 1); // X
+        game.play(1, 2); // O
+        game.play(2, 0); // X
+        game.play(2, 1); // O
+        game.play(2, 2); // X
+        Assertions.assertTrue(game.isGameOver());
+    }
 }   
