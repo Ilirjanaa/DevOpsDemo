@@ -22,8 +22,14 @@ public class TicTacToeTest {
     @Test
     public void Test2() {
         game.play(0, 0);
-        Assertions.assertEquals('1', game.getFieldValue(0, 0));
+        Assertions.assertEquals('X', game.getFieldValue(0, 0));
     }
 
+    @Test
+    public void Test3() {
+        game.play(1, 1);
+        game.play(1, 1);
+        Assertions.assertEquals('X', game.getFieldValue(1, 1));
+    }
     
 }   
