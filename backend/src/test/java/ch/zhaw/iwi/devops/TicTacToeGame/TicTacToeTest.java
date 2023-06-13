@@ -80,4 +80,14 @@ public class TicTacToeTest {
         Assertions.assertFalse(game.isGameOver());
     }
 
+    @Test
+    public void Test8() {
+        game.play(1, 0); // O
+        game.play(0, 1); // X
+        game.play(1, 1); // O
+        game.play(0, 2); // X
+        Assertions.assertTrue(game.isGameOver());
+    }
+
+
 }   
