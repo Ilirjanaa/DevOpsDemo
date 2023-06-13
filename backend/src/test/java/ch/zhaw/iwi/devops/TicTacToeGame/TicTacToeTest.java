@@ -90,4 +90,15 @@ public class TicTacToeTest {
     }
 
 
+    @Test
+    public void Test9() {
+        game.play(0, 0); // X
+        game.play(0, 1); // O
+        game.play(1, 0); // X
+        game.play(1, 1); // O
+        game.play(2, 0); // X
+        game.play(2, 2); // O
+        Assertions.assertFalse(game.isGameOver());
+}
+
 }   
