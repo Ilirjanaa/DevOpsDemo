@@ -59,7 +59,7 @@ public class TicTacToeTest {
 
     @Test
     public void Test6() {
-        game.play(3, 0); // X
+        game.play(0, 0); // X
         game.play(0, 1); // O
         game.play(1, 0); // X
         game.play(1, 1); // O
