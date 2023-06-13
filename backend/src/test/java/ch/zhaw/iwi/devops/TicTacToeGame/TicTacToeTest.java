@@ -55,5 +55,19 @@ public class TicTacToeTest {
         game.play(0, 2); // X
         game.play(1, 2); // O (Hinzugefügt)
         Assertions.assertTrue(game.isGameOver());
-}
+    }
+
+    @Test
+    public void Test6() {
+        game.play(3, 0); // X
+        game.play(0, 1); // O
+        game.play(1, 0); // X
+        game.play(1, 1); // O
+        game.play(2, 0); // X
+        game.play(2, 1); // O
+
+        boolean isGameOver = game.isGameOver();
+        Assertions.assertTrue(isGameOver, "The game should be over when a column is taken by a player.");
+    }
+
 }   
