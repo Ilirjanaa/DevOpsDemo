@@ -45,4 +45,15 @@ public class TicTacToeTest {
         game.play(2, 2); // X
         Assertions.assertTrue(game.isGameOver());
     }
+
+    @Test
+    public void Test5() {
+        game.play(0, 0); // X
+        game.play(1, 0); // O
+        game.play(0, 1); // X
+        game.play(1, 1); // O
+        game.play(0, 2); // X
+        game.play(1, 2); // O (Hinzugefügt)
+        Assertions.assertTrue(game.isGameOver());
+}
 }   
