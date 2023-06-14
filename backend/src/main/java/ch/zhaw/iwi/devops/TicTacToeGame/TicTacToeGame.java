@@ -46,7 +46,7 @@ public class TicTacToeGame {
     }
 
     private boolean hasPlayerWon() {
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 3; i++) {
             // Überprüfe Reihen
             if (board[i][0] == currentPlayer && board[i][1] == currentPlayer && board[i][2] == currentPlayer) {
                 return true;
