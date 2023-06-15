@@ -2,3 +2,4 @@
 .recommenders
 RemoteSystemsTempFiles
 .gradle
+node_modules
